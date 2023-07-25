@@ -1,0 +1,49 @@
+.Hero {
+    height: 80vh;
+    background-image: url('../../assets/banner.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .hero-content {
+        height: 100%;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        gap: 10px;
+        text-align: center;
+
+        .heading {
+            color: rgb(17, 82, 115);
+            font-size: 3rem;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 0px 25px 0px 25px;
+        }
+
+        .subheading {
+            color: rgb(17, 82, 115);
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 25px 0px 25px 0px;
+        }
+
+        .cta {
+            margin-top: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    .Hero {
+        height: 60vh;
+        .hero-content {
+            .heading {
+                font-size: 2rem;
+            }
+            .subheading {
+                font-size: 1rem;
+            }
+        }
+    }
+}
